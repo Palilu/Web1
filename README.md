@@ -23,6 +23,8 @@ Práctica de TUDAI/Web1
 	* Las noticias deben tener imágenes y al menos una debe tener una lista.
 	* En alguna de las noticias que tengan varios párrafos, aplicar un estilo particular y diferente a solo uno de ellos.
 
+11. Aplicar estilos al sitio para darle una imagen corporativa. Cada una de las páginas debe tener una imagen visual unificada. Asigne dentro del sitio colores a las fuentes, diversos  tipos de fuentes, tamaños y estilos de texto. Utilice tamaños relativos de fuentes  en las diferentes secciones del sitio.
+
 12. Agregar a la pagina del periodico el formato de codificación de caracteres UTF-8 (8-bit Unicode Transformation Format).
 
 13. Aplicar un estilo especial al texto que se encuentra en las listas.
