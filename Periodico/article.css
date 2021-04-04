@@ -1,0 +1,10 @@
+section article {
+	width: 80%;
+	display: block;
+	padding-left: 5%;
+  	padding-right: 5%;
+}
+
+.destacado {
+	color: #DD0000;
+}
