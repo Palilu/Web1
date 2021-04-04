@@ -3,6 +3,8 @@ Práctica de TUDAI/Web1
 
 ## Sitio Web de un periódico
 
+### HTML + CSS - Parte I
+
 4. Confeccionar la página principal del periódico con las marcas mínimas que debe tener e incluyendo los elementos:
     * doctype
     * html
@@ -28,3 +30,9 @@ Práctica de TUDAI/Web1
 12. Agregar a la pagina del periodico el formato de codificación de caracteres UTF-8 (8-bit Unicode Transformation Format).
 
 13. Aplicar un estilo especial al texto que se encuentra en las listas.
+
+### HTML + CSS - Parte II
+
+1. Relacionar las dos noticias elaboradas en el Práctico 1 - Parte I por medio de hipervínculos sobre el título de las noticias.
+
+2. Relacionar una imagen o texto de una de las noticias a cualquier página de la Web utilizando un hipervínculo. El vínculo se debe abrir en una pestaña nueva.
