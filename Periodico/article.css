@@ -8,3 +8,7 @@ section article {
 .destacado {
 	color: #DD0000;
 }
+
+li {
+	font-weight: bold;
+}
