@@ -4,10 +4,10 @@ Práctica de TUDAI/Web1
 ## Sitio Web de un periódico
 
 4. Confeccionar la página principal del periódico con las marcas mínimas que debe tener e incluyendo los elementos:
-    * <doctype>
-    * <html>
-    * <head>
-    * <body>
+    * doctype
+    * html
+    * head
+    * body
 
 5. Colocar un título de nivel 1 al sitio web que funcione como nombre del periódico. 
 
