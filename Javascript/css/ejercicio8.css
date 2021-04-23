@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+.bordeRojo {
+    border: red solid 3px;
+    padding: 5px;
+}
+
+.inner {
+    padding: 25px;
+}
+
+.black {
+    background-color: black;
+}

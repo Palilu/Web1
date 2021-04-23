@@ -1,0 +1,114 @@
+h1, h2, h4 {
+	font-family: 'Dela Gothic One', cursive;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1B193C;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-family: 'Newsreader', cursive;
+	font-size: 125%;
+}
+
+h4 {
+	font-size: 80%;
+	text-align: right;
+	margin-right: 2%;
+}
+
+p {
+	font-size: 100%;
+	color: #010001;
+}
+
+.destacado {
+	color: #514DB1;
+}
+
+.lista-destacada {
+	color: #1B193C;
+	font-size: 110%;
+}
+
+header {
+	width: 96%;
+	margin: 1%;
+	border: solid #1B193C 1px;
+	padding: 1%;
+}
+
+content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+section {
+	width: 64%;
+	margin: 1%;
+}
+
+aside {
+	width: 29%;
+	border: solid #1B193C 1px;
+	margin: 1%;
+	padding: 1%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.noticia {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;	
+}
+
+.imagen {
+	width: 33%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+article p {
+	font-family: 'Newsreader', cursive;
+	width: 62%;
+	margin: 2%;
+	font-size: larger;
+}
+
+aside p {
+	font-family: 'Dela Gothic One', cursive;
+	font-size: larger;
+	color: #514DB1;
+	text-align: center;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;	
+}
+
+header li {
+	list-style-type: none;
+	font-family: 'Dela Gothic One', cursive;
+	text-transform: uppercase;
+	color: #1B193C;
+}
+

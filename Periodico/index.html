@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Otro día en Argentina</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <title>Otro día en Argentina</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
 	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Newsreader:wght@200;400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/periodico.css">
 </head>
 <body>
-	<header>
-		<h1><a href="index.html">Otro día en Argentina</a></h1>
-	</header>	
-	<content>
-		<section class="column">
-			<h2>Noticias políticas</h2>
-			<article>
-				<h3><a href="incendio.html">"Vengo a apagar un incendio" Declaró Aníbal Fernandez</a></h3>
-				<img src="images/incendio.jpg">
-				<p>
-					"Vengo a apagar un incendio" siempre picante, el flamante ministro de Desarrollo Productivo de la Nación Anibal Fernandez
-					ironizó respecto a las circunstancias de su designación. Dejó en claro que cualquier problema en el ministerio, o en la
-					efectividad de las políticas de producción de la nación serían culpa de otro, y que él todavía no tuvo tiempo ni de desayunar.
-				</p>		
-			</article>
-			<article>
-				<h3><a href="apocalipsis.html">Extinción humana inminente</a></h3>
-				<img src="images/extincion.jpg">
-				<p>
-					La cepa turca causaría combustión instantanea. Ayer el ministro de Desarrollo Productivo de la Nación Matías Kulfas se habría insinerado durante una reunion de gabinete en la quinta de Olivos. La humanidad estaría enfrentando sus últimas horas con total 
-					apatía. Los hombres elijen enfrentar el final mirando netflix o yendo a tomar cerveza con sus amigos.
-				</p>
-			</article>
-		</section>		
-		<section class="column">
-			<h2>Noticias deportivas</h2>
-			<article>
-				<h3><a href="maradona.html">Expectativa por la resurrección del 10</a></h3>
-				<img src="images/maradona.jpg">
-				<p>
-					El pueblo argentino se divide entre la esperanza y el descreimiento despues de que Diego Armando Maradona fuera enterrado anoche en un cementerio de animales en Itatí, Corrientes. En su entorno declararon que tanto la exhumación, como el traslado y re entierro fueron muy cuidados, pese a los reclamos de su familia. 
-				</p>		
-			</article>
-			<article>
-				<h3><a href="final.html">Épica final de la copa Argentina, Aldosivi 4, Belgrano de Córdoba 5, 3 insinerados</a></h3>
-				<img src="images/belgrano.jpg">
-				<p>
-					Una final que será recordada por siempre en la copa argentina, Belgrano sacó ventaja como visitante en un partido para el infarto despues de que 3 jugadores sufrieran una combustión instantanea a raiz de la nueva cepa turca. El presidente de Aldosivi culpó a la AFA, reclama que el partido debió suspenderse despues de la primera insineración y reclamo el fallo del VAR en el penal.
-				</p>
-			</article>
-		</section>
-	</content>
-	<footer>
-		<h4>Otro día en Argentina. 2021.</h4>
-	</footer>
+    <header>
+        <h1><a href="index.html">Otro día en Argentina</a></h1>
+        <ul>
+            <li>Política</li>
+            <li>Economia</li>
+            <li>El mundo</li>
+            <li>Clima</li>
+            <li>Espectaculos</li>
+        </ul>
+    </header>
+    <content>
+        <section>
+            <article>
+                <h3><a href="incendio.html">"Vengo a apagar un incendio" Declaró Aníbal Fernandez</a></h3>
+                <div class="noticia">
+                    <p>
+                        "Vengo a apagar un incendio" siempre picante, el flamante ministro de Desarrollo Productivo de la Nación Anibal Fernandez
+                        ironizó respecto a las circunstancias de su designación. Dejó en claro que cualquier problema en el ministerio, o en la
+                        efectividad de las políticas de producción de la nación serían culpa de otro, y que él todavía no tuvo tiempo ni de desayunar.
+                    </p>
+                    <div class="imagen"><img src="images/incendio.jpg"></div>
+                </div>
+            </article>
+            <article>
+                <h3><a href="apocalipsis.html">Extinción humana inminente</a></h3>
+                <div class="noticia">
+                    <div class="imagen"><img src="images/extincion.jpg"></div>
+                    <p>
+                        La cepa turca causaría combustión instantanea. Ayer el ministro de Desarrollo Productivo de la Nación Matías Kulfas se habría 
+                        insinerado durante una reunion de gabinete en la quinta de Olivos. La humanidad estaría enfrentando sus últimas horas con total 
+                        apatía. Las personas elijen enfrentar el final mirando netflix o yendo a tomar cerveza con sus amigos.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3><a href="maradona.html">Expectativa por la resurrección del 10</a></h3>
+                <div class="noticia">
+                    <p>
+                        El pueblo argentino se divide entre la esperanza y el descreimiento despues de que Diego Armando Maradona fuera enterrado anoche
+                        en un cementerio de animales en Itatí, Corrientes. En su entorno declararon que tanto la exhumación, como el traslado y re entierro 
+                        fueron muy cuidados, pese a los reclamos de su familia. 
+                    </p>
+                    <div class="imagen"><img src="images/diego.jpg"></div>
+                </div>
+            </article>
+            <article>
+                <h3><a href="final.html">Épica final de la copa Argentina, Aldosivi 4, Belgrano de Córdoba 5, 3 insinerados</a></h3>
+                <div class="noticia">
+                    <div class="imagen"><img src="images/belgrano.jpg"></div>
+                    <p>
+                        Una final que será recordada por siempre en la copa argentina, Belgrano sacó ventaja como visitante en un partido para el infarto 
+                        despues de que 3 jugadores sufrieran una combustión instantanea a raiz de la nueva cepa turca. El presidente de Aldosivi culpó a 
+                        la AFA, reclama que el partido debió suspenderse despues de la primera insineración y reclamo el fallo del VAR en el penal.
+                    </p>    
+                </div>
+            </article>
+        </section>
+        <aside>
+            <img src="images/goat.jpg">
+            <p>Cóma chivo!!!</p>
+            <img src="images/publicite.png">
+            <p>Publicite Aquí!!!</p>
+        </aside>
+    </content>
+    <footer>
+        <h4>Otro día en Argentina. 2021.</h4>
+    </footer>
 </body>
 </html>
