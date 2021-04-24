@@ -1,0 +1,49 @@
+body {
+  font-family: 'Newsreader', serif;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1 {
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 400%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1, h2, h4 {
+	color: #1B193C
+}
+
+h3, p {
+	color: #514DB1;
+}
+
+h3 {
+	color: #1B193C
+}
+
+h4 {
+	text-align: right;
+}
+
+article {
+	width: 40%;
+	display: inline-block;
+	padding-left: 4%;
+  	padding-right: 4%;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	color: #010001
+	text-align: justify;
+}
+
+a { 
+	color: inherit;
+	text-decoration: inherit; 
+} 

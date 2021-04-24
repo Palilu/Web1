@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    background-color: pink;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  h1, ol {
+    color: blue;
+  }
+  
+  h1 {
+    text-align: center;
+      font-size: 30px;
+  }
+  
+  h2 {
+   color: green;
+  }
+  
+  h3 {
+      text-transform: uppercase;
+    color: white;
+  }
+  
+  p {
+  color: red;
+  }
+  
+  
+  

@@ -37,32 +37,12 @@ Práctica de TUDAI/Web1
 
 2. Relacionar una imagen o texto de una de las noticias a cualquier página de la Web utilizando un hipervínculo. El vínculo se debe abrir en una pestaña nueva.
 
-### Javascript - Parte I
+6. Relacionar las dos noticias elaboradas en el Práctico 1 - Parte I por medio de hipervínculos sobre el título de las noticias.
 
-#### BÁSICO
-1. Muestre una alerta al cargar una página
-    - Que sea un texto fijo
-    - Que sean dos variables nombre y apellido concatenadas, mostrando en el mensaje: Nombre: (valor_nombre)  Apellido: (valor_apellido)
+7. Relacionar una imagen o texto de una de las noticias a cualquier página de la Web utilizando un hipervínculo. El vínculo se debe abrir en una pestaña nueva.
 
-2. Escribir un HTML con tres divs vacios (sin contenido) y darle un texto desde Javascript (al cargar la pagina). Reflexione entre las diferencias en hacerlo en HTML o en Javascript. 
-    - Es posible desde JS insertar diferentes parrafos adentro del div?
+10. Mediante el uso de Box Layout diseñe el siguiente layout para una página:
 
-3. Mostrar el mismo mensaje del punto uno, pero haciendo click desde un botón
+12. Modifique el ejercicio 4 para lograr el siguiente layout:
 
-4. Crear 3 botones de distinto color. Agregar la funcionalidad para que se muestre en un párrafo un mensaje que avise cual de los botones fue el último cliqueado.
 
-5. EN ESTE NIVEL ESTA EL CAPTCHA DEL TPE1 (es decir, recomendamos hacer los anteriores primero)
-
-#### INTERMEDIO
-
-6. Cree una “Lista de Tareas” donde cada tarea se agrega desde un input de texto.
-
-7. Crear un formulario con Nombre, Apellido y un botón Enviar. Al presionar Enviar debe mostrar el nombre y apellido como título dentro de una página.
-
-8. Crear un botón que al hacer click cambie el color de fondo de un div y agregue borde de 3px rojo..
-
-#### AVANZADO
-
-9. Crear una página que tenga un contenedor (div) con información y un botón. Cree una función Javascript que oculte o muestre el div que contiene la información.
-
-10. Implementar una calculadora que permita ingresar dos operandos mediante dos inputs y permita realizar las operaciones básicas (suma, resta, división, multiplicación) elegidas desde una lista desplegable (select).
