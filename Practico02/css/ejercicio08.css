@@ -1,0 +1,23 @@
+.fixed.small {
+    width: 200px;
+    height: 200px;
+    background-color: red;    
+}
+
+.fixed.big {
+    width: 400px;
+    height: 400px;
+    background-color: blue;    
+}
+
+.percentage.small {
+    width: 20%;
+    min-height: 20%;
+    background-color: green;    
+}
+
+.percentage.big {
+    width: 50%;
+    min-height: 50%;
+    background-color: violet;    
+}

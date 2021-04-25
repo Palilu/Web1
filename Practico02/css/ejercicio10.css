@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, content, footer {
+    background-color: lightblue;
+    border: solid 1px black;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+header {
+    height: 20%;
+}
+
+content {
+    height: 70%;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer {
+    height: 10%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.columns {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.columns div {
+    width: 48%;
+    margin: 2% 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.left {
+    background-color: orange;
+
+}
+
+.right {
+    background-color: yellow;
+}

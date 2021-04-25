@@ -67,3 +67,4 @@ Agregar al periódico una barra de vínculos a redes sociales con sus iconos.
 
 Antes de comenzar, realice un esquema del layout con las posiciones y medidas deseadas.
 
+14. En la página principal establecer tamaños de las fuentes con medidas relativas. La primer letra de los párrafos deberá ser el doble de la del párrafo. Los títulos de h1 a h4 deberán ir decreciendo su tamaño en un 20%.
