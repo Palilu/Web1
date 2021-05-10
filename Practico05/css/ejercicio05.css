@@ -1,0 +1,43 @@
+/* 
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV 
+    
+
+    iPhone 12 mini = 2340 x 1080 pixeles 1080
+    iPad pro 11" = 2.388 x 1.668 pixeles 1668 
+    mac book air = 2560 x 1600 pixeles    
+    */
+
+@media only screen and (min-width: 320px) { 
+    body {  
+        background-color: #FF44DD;
+    }
+}
+
+@media only screen and (min-width: 481px) { 
+    body {  
+        background-color: #DD22BB;
+    }
+}
+
+@media only screen and (min-width: 769px) { 
+    body {  
+        background-color: #BB0099;
+    }
+}
+
+@media only screen and (min-width: 1025px) { 
+    body {  
+        background-color: #990077;
+    }
+}
+
+@media only screen and (min-width: 1201px) { 
+    body {  
+        background-color: #770055;
+    }
+}
+    

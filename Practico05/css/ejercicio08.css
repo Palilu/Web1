@@ -1,0 +1,96 @@
+/* 
+Con Flex
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: coral;
+    height: 6em;
+}
+
+article {
+    width: 100%;
+    background-color: darkgoldenrod;
+    height: 38em; 
+}
+
+aside {
+    width: 100%;
+    background-color: darkmagenta;
+    height: 30em; 
+}
+
+footer {
+    width: 100%;
+    background-color: darkslategray;
+    height: 6em; 
+}
+
+@media only screen and (min-width: 1080px) { 
+    article {
+        width: 60%;
+    }
+    
+    aside {
+        width: 40%;
+        height: 38em;
+    }
+} */
+
+/* Con Grid */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header"
+      "content"
+      "aside"
+      "footer";
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: coral;
+    height: 6em;
+}
+
+article {
+    grid-area: content;
+    background-color: darkgoldenrod;
+    height: 38em; 
+}
+
+aside {
+    grid-area: aside;
+    background-color: darkmagenta;
+    height: 30em; 
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkslategray;
+    height: 6em; 
+}
+
+@media only screen and (min-width: 1080px) { 
+    body {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+          "header header"
+          "content aside"
+          "footer footer";
+    }
+
+    aside {
+        height: 38em; 
+    }
+}

@@ -31,3 +31,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_t
     header
     content
     footer
+
+11. Mediante el uso de listas, agregue una barra de navegación horizontal dentro del header del punto anterior.
+
+12. Modifique el ejercicio 10 para lograr el siguiente layout:
+
+    h e a d e r     
+    left  right
+    f o o t e r
+
+    
