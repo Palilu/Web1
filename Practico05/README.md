@@ -42,11 +42,11 @@ https://www.w3schools.com/css/css_rwd_viewport.asp
 Primera versión: no importan las dimensiones de las cajas, solo la grilla 5x5.
 Segunda versión: cajas cuadradas
 
+```
 .container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  
 }
 
 .item {
@@ -56,6 +56,7 @@ Segunda versión: cajas cuadradas
   margin: 10px;
   color: white;
 }
+```
 
  12. Realice los siguientes layouts mediante las técnicas flexbox y grid css. 
 
@@ -65,4 +66,3 @@ Segunda versión: cajas cuadradas
                                   D
 
       Desktop      Tablet       Mobile              
-                   
