@@ -5,6 +5,15 @@ h1, h2, h4 {
 	color: #1B193C;
 }
 
+h3 {
+	font-family: 'Newsreader', cursive;
+}
+
+h4 {
+	text-align: right;
+	margin-right: 2%;
+}
+
 h1 {
     font-size: 200%;
 }
@@ -14,14 +23,11 @@ h2 {
 }
 
 h3 {
-	font-family: 'Newsreader', cursive;
 	font-size: 160%;
 }
 
 h4 {
 	font-size: 140%;
-	text-align: right;
-	margin-right: 2%;
 }
 
 p {
@@ -45,38 +51,36 @@ header {
 	padding: 1%;
 }
 
-content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-
 section {
-	width: 64%;
 	margin: 1%;
 }
 
 aside {
-	width: 29%;
 	border: solid #1B193C 1px;
-	margin: 1%;
-	padding: 1%;
 }
 
 a {
 	text-decoration: none;
 }
 
-.noticia {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;	
+article {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"figure"
+	"p"
 }
 
-.imagen {
-	width: 33%;
+article h3 {
+	grid-area: header;
+}
+
+article figure {
+	grid-area: figure;
+}
+
+article p {
+	grid-area: p;
 }
 
 img {
@@ -86,10 +90,8 @@ img {
 
 article p {
 	font-family: 'Newsreader', cursive;
-	width: 62%;
-	margin: 2%;
 	font-size: larger;
-
+	margin: 2%;
 }
 
 article p::first-letter {
@@ -104,12 +106,8 @@ aside p {
 }
 
 header ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;	
+	display: none;
 }
-
 header li {
 	list-style-type: none;
 	font-family: 'Dela Gothic One', cursive;
@@ -117,3 +115,66 @@ header li {
 	color: #1B193C;
 }
 
+aside {
+	display: flex;
+	flex-direction: row;	
+}
+
+aside figure {
+	width: 50%;
+}
+
+@media only screen and (min-width: 720px) {
+
+	header ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;	
+	}
+	
+	content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	article {
+		display: grid;
+		grid-template-columns: 4fr 6fr;
+		grid-template-areas: 
+		"header header"
+		"figure p"
+	}
+
+	article:nth-child(2n) {
+		display: grid;
+		grid-template-columns: 6fr 4fr;
+		grid-template-areas: 
+		"header header"
+		"p figure"
+	}
+
+	article p {
+		margin: 2%;
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+
+	section {
+		width: 64%;
+	}
+
+	aside {
+		display: inline;
+		width: 29%;
+		margin: 1%;
+		padding: 1%;
+	}
+
+	aside figure {
+		width: 80%;
+	}
+}

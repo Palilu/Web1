@@ -37,3 +37,22 @@ https://www.w3schools.com/css/css_rwd_viewport.asp
     aside      footer footer
     footer
 
+10. Modifique este codepen para que se vea de la siguiente manera:
+
+Primera versión: no importan las dimensiones de las cajas, solo la grilla 5x5.
+Segunda versión: cajas cuadradas
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  background: red;
+  margin: 10px;
+  color: white;
+}
