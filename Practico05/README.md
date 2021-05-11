@@ -60,9 +60,11 @@ Segunda versión: cajas cuadradas
 
  12. Realice los siguientes layouts mediante las técnicas flexbox y grid css. 
 
+```
       A B C        A A D D        A
       D D D        B C D D        B
                                   C
                                   D
 
-      Desktop      Tablet       Mobile              
+      Desktop      Tablet       Mobile
+```              
