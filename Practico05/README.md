@@ -32,10 +32,14 @@ https://www.w3schools.com/css/css_rwd_viewport.asp
 
 8. Realice los siguientes layouts mediante las técnicas flexbox y grid css. ¿Cuál de las técnicas le pareció más apropiada para realizar cada uno?
 
+```
     header     header header 
     article    article aside
     aside      footer footer
     footer
+
+    Mobile       Desktop
+```
 
 10. Modifique este codepen para que se vea de la siguiente manera:
 
