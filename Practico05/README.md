@@ -67,4 +67,14 @@ Segunda versión: cajas cuadradas
                                   D
 
       Desktop      Tablet       Mobile
-```              
+``` 
+
+13. Realice los siguientes layout responsive:
+
+```
+      B B        A B B
+      C D        C D E
+      E E
+
+    Mobile       Desktop
+``` 

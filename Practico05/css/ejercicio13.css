@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas: 
+          "B B"
+          "C D"
+          "E E";
+}
+
+div {
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    grid-area: A;
+    display: none;
+}
+
+.b {
+    grid-area: B;
+}
+
+.c {
+    grid-area: C;
+}
+
+.d {
+    grid-area: D;
+}
+
+.e {
+    grid-area: E;
+}
+
+@media only screen and (min-width: 1080px) { 
+
+    .a {
+        display: flex;
+    }
+
+    body {
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+          "A B B"
+          "C D E";
+    }
+}
