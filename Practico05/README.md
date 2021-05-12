@@ -40,8 +40,9 @@ https://www.w3schools.com/css/css_rwd_viewport.asp
 
     Mobile       Desktop
 ```
+    Grid me parece alpha mal.
 
-10. Modifique este codepen para que se vea de la siguiente manera:
+10. Modifique [este codepen](https://codepen.io/webUnicen/pen/QRLKbr) para que se vea de la siguiente manera:
 
 Primera versión: no importan las dimensiones de las cajas, solo la grilla 5x5.
 Segunda versión: cajas cuadradas
