@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+body * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    background-color: blue;
+    height: 10%;
+}
+
+nav, aside {
+    background-color: cadetblue;
+    height: 10%;
+}
+
+article {
+    background-color: gray;
+    height: 60%;
+}
+
+@media only screen and (min-width: 1080px) { 
+
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header, footer {
+        width: 100%;
+        height: 20%;
+    }
+
+    nav, aside {
+        width: 20%;
+        height: 60%;
+    }
+
+    article {
+        width: 60%;
+        height: 60%;
+    }
+
+    header {
+        order 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    article {
+        order: 3;
+    }
+
+    aside {
+        order: 4;
+    }
+
+    footer {
+        order: 5;
+    }
+}

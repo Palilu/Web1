@@ -78,3 +78,15 @@ Segunda versión: cajas cuadradas
 
     Mobile       Desktop
 ``` 
+
+14. Realice el siguiente layout responsive. Investigue la propiedad order.
+
+```
+      header header header        header
+      nav content aside           content
+      footer footer footer        nav
+                                  aside
+                                  footer
+
+            Desktop               Mobile
+``` 
