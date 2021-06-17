@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    font-size: 60%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e";
+}
+
+body h1 {
+    font-size: 5em;
+    display: grid;
+    place-items: center;
+    margin: 5px;
+}
+
+.a {
+    grid-area: a;
+    background-color: red;
+}
+
+.b {
+    grid-area: b;
+    background-color: gray;
+}
+
+.c {
+    grid-area: c;
+    background-color: blue;
+}
+
+.d {
+    grid-area: d;
+    background-color: green;
+}
+
+.e {
+    grid-area: e;
+    background-color: yellow;
+}
+
+.f {
+    background-color: violet;
+    display: none;
+}
+
+@media screen and (min-width:480px) {
+    
+    html {
+        font-size: 100%;
+    }
+
+    .d {
+        display: none;
+    }
+
+    .f {
+        display: grid;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
+        grid-template-areas: 
+            "a a"
+            "b b"
+            "c f"
+            "e e";
+    }
+}
+
+/* La tipografía del sitio debe ser “Formatter” y la del menu debe ser “FalseRomans”,  color gris oscuro. */
+
+html {
+    font-family: "“Formatter”";
+}
+
+nav {
+    font-family: "“FalseRomans”";
+    color: darkgray;
+}
+
+/* Los hiperlinks del menu deben ser de color rojo, cuando se posa el mouse deber tener estilo negrita y fondo gris. */
+
+nav a  {
+    color: red;
+}
+
+nav a:hover  {
+    font-weight: bold;
+    background-color: gray;
+}
+
+/* Los párrafos de los articulos deben tener estar en itálica, tamaño 12px. Los hipelinks dentro del pie de pagina deben ser de color rojo.  */
+
+article p {
+    font-style: italic;
+    font-size: 12px;
+}
+
+footer a {
+    color: red;
+}
+
+
