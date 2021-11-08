@@ -1,0 +1,475 @@
+html {
+    font-size: 80%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "header" 
+        "nav"
+        "content" 
+        "footer";
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        "LG LG"
+        "H1 TN"
+        "H2 TN";
+}
+
+header figure {
+    grid-area: LG;
+}
+
+header h1 {
+    grid-area: H1;
+    text-align: center;
+    font-size: 8em;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+}
+
+header h2 {
+    grid-area: H2;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    color: #FFCC00;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+header .topnav {
+    grid-area: TN;
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    grid-area: nav;
+    display: none;
+}
+
+nav.visible {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    padding: 0 10%;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin: 1em 0;
+}
+
+nav li {
+    font-size: 2em;
+}
+
+content li {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.highlighted {
+    color: #FFCC00;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover, header li:hover, .rounded button:hover {
+    opacity: 0.7;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: content;
+}
+
+.content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, nav, footer {
+    background-color: #272727;
+    color: #FFFFFF;
+}
+
+header h1, nav ul, .content, button, select {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+header figure {
+    background-image: url("../images/logo.jpg");
+    background-size: 375px;
+    margin: 0;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+}
+footer ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer ul a, .captcha-msg {
+    background: transparent;
+    color: #FFCC00;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.2px;
+    overflow: scroll;
+}
+
+.content table {
+    border-collapse: collapse;
+}
+
+.content table td, .content table th {
+    padding: 1em 1.5em;
+    border: #FFCC00 3px solid;
+}
+
+.content .prices table th:first-child {
+    border-top: 0;
+    border-left: 0;
+}
+
+.content .prices table tr:last-child td:last-child {
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.content ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+}
+
+.content li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 3% 3%;
+    padding: 2%;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #272727;
+    color: #FFFFFF;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.content li h4 {
+    font-size: 1.5em;
+    width: 100%;
+    color: #FFCC00;
+    margin: 0.5em 0;
+}
+
+.content li img {
+    width: 60%;
+    align-items: center;
+    height: auto;
+}
+
+.content li p {
+    width: 80%;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 3em 0;
+}
+
+.rounded {
+    border-radius: 25px;
+    background-color: #272727;
+    color: #FFFFFF;
+    padding: 2em 1em;
+    margin-top: 1em;
+}
+
+.rounded form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rounded div {
+    margin: 7px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.rounded div:first-child {
+    margin-top: 0;
+}
+
+.rounded div:last-child {
+    margin-bottom: 0;
+}
+
+.content figure, .content img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.content {
+    margin: 0;
+}
+
+.info input {
+    width: 50%;
+}
+
+.info label {
+    margin-right: 10px;
+}
+
+.info label.center {
+    margin-left: 10px;
+}
+
+.form .address {
+    width: 100%;
+}
+
+.rounded .delivery {
+    justify-content: center;
+}
+
+.rounded .delivery input{
+    width: initial;
+}
+
+.rounded .captcha {
+    margin: 14px 7px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.captcha input {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.rounded button {
+    color: #272727;
+    background-color: #FFCC00;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.rounded .submit button {
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.captcha-txt {
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2px;
+    border: 3px solid #FFCC00;
+    margin: 0 10px;
+}
+
+.form.rounded .addButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form {
+    margin: 0 0.2em 1.5em 0.2em;
+}
+
+.fa-gift {
+    display: none;
+}
+
+.fa-gift.visible {
+    display:  inline-block;
+    animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.oldPrice {
+    text-decoration: line-through;
+}
+
+.content .form table tr td:last-child, .content .form table tr th:last-child {
+    padding: 0;
+}
+
+.rounded div.hidden {
+    display: none; 
+}
+
+.myOrders {
+    margin-bottom: 1em;
+}
+
+.myOrders table td, .myOrders table th {
+    padding: 1em 0.5em 1em 0.5em;
+}
+
+.content .myOrders table td:last-child, .content .myOrders table th:last-child, .myOrders table td .fa {
+    padding: 0;
+    border: none;
+}
+
+@media only screen and (min-width: 480px)  {
+    
+    html {
+        font-size: 100%;
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "LG"
+            "H1"
+            "H2";
+    }
+
+    header h1 {
+        font-size: 9em;
+    }
+
+    header .topnav {
+        display: none;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .content ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content table td, .content table th {
+        padding: 1em 2em;
+    }
+
+    .prices .rounded, .form.rounded {
+        padding: 3em 3em;
+    }
+}
+
+@media only screen and (min-width: 1025px)  {
+
+    html, body, header, .content { 
+        height : 100%; 
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: 
+            "header content" 
+            "nav    content" 
+            "footer content";
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "LG"
+            "H1"
+            "H2";
+    }
+
+    header h1 {
+        font-size: 6em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .content ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content .form.rounded {
+        width: 500px;
+    }
+}

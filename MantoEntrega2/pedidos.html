@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANTO Alfajores</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/manto.css">
+    <script type="text/javascript" src="js/topnav.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+    <script type="text/javascript" src="js/captcha.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <figure alt="logo"></figure>
+        <!-- Título -->
+        <h1>Manto</h1>
+        <h2>de Saladillo a tu boca</h2>
+        <!-- Top Nav -->
+        <div class="topnav" id="topNav">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a class="highlighted" href="pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido -->    
+    <article class="content">
+        <h3>Pedidos</h3>
+        <div class="form rounded">
+            <form id="form" action="pedidos.html" method="post">
+                <div class="info">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" required />
+                    <label class="center" for="apellido">Apellido:</label>
+                    <input id="apellido" type="text" name="apellido" required/>
+                </div>
+                <div class="info">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required/>
+                    <label class="center" for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" required/>
+                </div>
+                <div class="info delivery">
+                    <label for="retiroTienda">Retiro en tienda</label>
+                    <input id="retiroTienda" type="radio" name="entrega" checked/>
+                    <label class="center" for="entregaDomicilio">Envío a domicilio</label>
+                    <input id="entregaDomicilio" type="radio" name="entrega" />
+                </div>
+                <div class="info hidden">
+                    <label for="direccion">Dirección:</label>
+                    <input id="direccion" type="text" class="address" name="direccion"/>
+                </div>
+                <div class="info">
+                    <label for="productType">Producto:</label>
+                    <select class="address" id="productType"></select>
+                </div>
+                <div class="addButtons">
+                    <button id="price1Btn" type="button">1 x $<span id="price1">75</span></button>
+                    <button id="price3Btn" type="button">3 x $<span id="price3">225</span></button>
+                    <button id="price6Btn" type="button">6 x $<span id="price6">420</span></button>
+                    <button id="price12Btn" type="button">12 x $<span id="price12">750</span></button>
+                </div>
+                <h4>Tu Pedido:</h4>
+                <table>
+                    <theader>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>
+                                <i id="reset" class="fa fa-trash" aria-hidden="true"></i>
+                            </th>
+                        </tr>
+                    </theader>
+                    <tbody id="cart"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td id="total"></td>
+                            <td><i class="fa fa-gift" aria-hidden="true"></i></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="captcha">
+                    <label for="captcha">No soy un robot</label>
+                    <span id="captcha-txt" class="captcha-txt"></span>
+                    <input id="captcha-inp" type="text" name="captcha" required/>
+                    <span id="captcha-msg"></span>
+                </div>
+                <div class="submit">
+                    <button id="submit-btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </article>
+    <!-- Footer -->
+    <footer>
+        <!-- Redes -->
+        <ul>
+            <li><a href="https://www.facebook.com/desaladilloatuboca/" class="fa fa-facebook" title="Facebook" target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/alfajoresmanto/" class="fa fa-instagram" title="Instagram" target="_blank"></a></li>
+            <li><a href="whatsapp://send?&phone=+5492345414280&abid=+5492345414280" class="fa fa-whatsapp" title="WhatsApp" target="_blank"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

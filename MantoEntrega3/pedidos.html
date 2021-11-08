@@ -1,0 +1,104 @@
+<!-- Contenido -->    
+<article class="content">
+    <h3 id="topHeader">Hacer un pedido nuevo</h3>
+    <div class="form rounded">
+        <form id="form" action="pedidos.html" method="post">
+            <div class="info">
+                <input type="hidden" id="id" name="id" />
+                <label for="fname">Nombre:</label>
+                <input id="fname" type="text" name="fname" required />
+                <label class="center" for="lname">Apellido:</label>
+                <input id="lname" type="text" name="lname" required/>
+            </div>
+            <div class="info">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required/>
+                <label class="center" for="phone">Teléfono:</label>
+                <input id="phone" type="tel" name="phone" required/>
+            </div>
+            <div class="info delivery">
+                <label for="retiroTienda">Retiro en tienda</label>
+                <input id="retiroTienda" type="radio" name="type" value="Retiro en tienda" checked/>
+                <label class="center" for="entregaDomicilio">Envío a domicilio</label>
+                <input id="entregaDomicilio" type="radio" name="type" value="Entrega a domicilio" />
+            </div>
+            <div class="info hidden">
+                <label for="address">Dirección:</label>
+                <input id="address" type="text" class="address" name="address"/>
+            </div>
+            <div class="info">
+                <label for="productType">Producto:</label>
+                <select class="address" id="productType"></select>
+            </div>
+            <div class="addButtons">
+                <button id="price1Btn" type="button">1 x $<span id="price1">75</span></button>
+                <button id="price3Btn" type="button">3 x $<span id="price3">225</span></button>
+                <button id="price6Btn" type="button">6 x $<span id="price6">420</span></button>
+                <button id="price12Btn" type="button">12 x $<span id="price12">750</span></button>
+            </div>
+            <h4>Tu Pedido:</h4>
+            <table>
+                <theader>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>
+                            <i id="reset" class="fa fa-trash" aria-hidden="true"></i>
+                        </th>
+                    </tr>
+                </theader>
+                <tbody id="cart"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="total"></td>
+                        <td><i class="fa fa-gift" aria-hidden="true"></i></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="captcha">
+                <label for="captcha">No soy un robot</label>
+                <span id="captcha-txt" class="captcha-txt"></span>
+                <input id="captcha-inp" type="text" name="captcha" required/>
+                <span id="captcha-msg"></span>
+            </div>
+            <div class="submit">
+                <button id="submit-btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <section id="myOrders" class="myOrders">
+        <h3>Mis pedidos</h3>
+        <select id="searchBy">
+            <option value="id">ID</option>
+            <option value="fname">Nombre</option>
+            <option value="lname">Apellido</option>
+            <option value="address">Dirección</option>
+            <option value="phone">Teléfono</option>
+        </select>
+        <input id="searchValue" type="text" >
+        <button id="search">Buscar</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Datos Personales</th>
+                    <th>Items</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody id="orders">
+
+            </tbody>
+        </table>
+        <input id="pageNumber" type="number" value="1">
+            <select id="pageLimit">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="ALL" selected>ALL</option>
+            </select>
+            <button id="paginate">Paginar</button>   
+    </section>
+    <span id="anchor"></span>
+</article>

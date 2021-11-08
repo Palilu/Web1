@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANTO Alfajores</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/manto.css">
+</head>
+<body>
+    <!-- Barra Lateral -->
+    <div class="header">
+        <div>
+            <!-- Logo -->
+            <img src="images/logo.jpg" alt="Logo">
+            <!-- Título -->
+            <h1>Manto</h1>
+            <h2>de Saladillo a tu boca</h2>
+             <!-- Menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a class="highlighted" href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </div>   
+        <!-- Redes -->
+        <ul class="social">
+            <li><a href="https://www.facebook.com/desaladilloatuboca/" class="fa fa-facebook" title="Facebook" target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/alfajoresmanto/" class="fa fa-instagram" title="Instagram" target="_blank"></a></li>
+            <li><a href="whatsapp://send?&phone=+5492345414280&abid=+5492345414280" class="fa fa-whatsapp" title="WhatsApp" target="_blank"></a></li>
+        </ul>
+    </div>
+    <!-- Contenido -->    
+    <div class="content">
+        <div class="prices">
+            <h3>Pedidos</h3>
+            <div class="rounded">
+                <form id="form" action="pedidos.html" method="post">
+                    <div class="info">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" name="nombre" />
+                        <label class="center" for="apellido" name="apellido">Apellido:</label>
+                        <input type="text" />
+                    </div>
+                    <div class="info">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" class="address" name="direccion"/>
+                    </div>
+                    <div class="info">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email"/>
+                        <label class="center" for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono"/>
+                    </div>
+                    <div class="info delivery">
+                        <label for="entrega">Retiro en tienda</label>
+                        <input type="radio" name="entrega" />
+                        <label class="center" for="entrega">Envío a domicilio</label>
+                        <input type="radio" name="entrega" />
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de dulce de leche bañado en chocolate</label>
+                        <input type="number" name="alfajor_dlc_ch">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de dulce de leche bañado en chocolate blanco</label>
+                        <input type="number" name="alfajor_dlc_bl">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de fruta bañado en chocolate</label>
+                        <input type="number" name="alfajor_frt_ch">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de fruta bañado en chocolate blanco</label>
+                        <input type="number" name="alfajor_frt_bl">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de dulce de leche bañado en chocolate 70% cacao</label>
+                        <input type="number" name="alfajor_dlc_70">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de almendras bañado en chocolate</label>
+                        <input type="number" name="alfajor_alm_ch">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Alfajor de nueces bañado en chocolate blanco</label>
+                        <input type="number" name="alfajor_nue_bl">
+                    </div>
+                    <div class="amounts">
+                        <label for="productos">Conito de dulce de leche bañado en chocolate</label>
+                        <input type="number" name="conito_dlc_ch">
+                    </div>
+                    <div class="captcha">
+                        <label for="captcha">No soy un robot</label>
+                        <span id="captcha-txt" class="captcha-txt"></span>
+                        <input id="captcha-inp" type="text" name="captcha" />
+                        <span id="captcha-msg"></span>
+                    </div>
+                    <div>
+                        <button id="submit-btn" type="button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/pedidos.js"></script>
+</body>
+</html>
